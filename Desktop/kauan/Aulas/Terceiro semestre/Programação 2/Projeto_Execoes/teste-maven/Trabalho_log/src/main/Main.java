@@ -1,19 +1,22 @@
 package main;
 
-import java.lang.System.Logger;
-import java.lang.System.Logger.Level;
+
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import Pessoa.Cliente;
 
 public class Main {
 	Scanner scanner = new Scanner(System.in);
 	ArrayList<Cliente> clientes = new ArrayList<>();
-	private static final Logger logger = Logger.
+	private static final Logger logger = Logger.getLogger(Main.class.getName());
 	public static void main(String[] args) {
+		Main main = new Main();
 		
+		main.cadastro(null, null, null);
+		main.login(null, null);
 		
 	}
 	
